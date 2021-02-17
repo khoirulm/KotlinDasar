@@ -3,17 +3,17 @@
 //Untuk membuat extension function, kita cukup menambahkan tipe data pada nama function nya, lalu diikuti dengan tanda . (titik)
 //Untuk mengakses data nya di extension function, kita bisa menggunakan kata kunci this
 
-fun Int.hello() : Int {
-     var total = 10 * 12 + this
-    return total
 
-}
-fun String.printHello(): Unit = println("Hello $this")
+fun String.hello(): String = "Hello $this"
 
-fun main() {
 
-    val name = 100
+fun Int.printHello(): Int = 30 + this
+
+fun main(){
+    val name = "Khoirul"
+    val angka = 30;
+
     println(name.hello())
+    println(angka.printHello())
 
-    "Muttaqin".printHello()
 }
