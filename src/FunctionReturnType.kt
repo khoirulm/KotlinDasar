@@ -1,22 +1,19 @@
-fun jumlah(a:Int, b:Int):Int{
-    val total = a +b
+fun sum(a: Int, b: Int): Int{
+    val total = a + b
     return total
 }
-fun bagi(a:Int, b:Int):Int{
 
-    if (a == 0 || b == 0){
+fun bagi(c: Int, d:Int) : Int{
+    if (d == 0){
         return 0
     }else{
-        val total = a / b
-        return total
+        var jumlah = c / d
+        return jumlah
     }
 }
 
-fun main() {
-    println(jumlah(10,39))
-
-    var result = jumlah(30,70)
-    println(result)
-
+fun main(){
     println(bagi(5,0))
+    val pembagi = bagi(10,10)
+    print(pembagi)
 }
