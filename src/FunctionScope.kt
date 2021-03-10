@@ -5,6 +5,7 @@ fun main(){
 
     fun sayYes(name:String) : String{
         return "$name Saya Sih Yes"
+
     }
 
     print(sayYes(dhani))

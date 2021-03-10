@@ -1,4 +1,4 @@
-infix fun String.to(type : String) : String{
+infix fun String.rubah(type : String) : String{
     if (type == "UP"){
         return this.toUpperCase()
     }else{
@@ -7,7 +7,7 @@ infix fun String.to(type : String) : String{
 }
 
 fun main(){
-    val result = "Khoirul" to "UP"
+    val result = "Khoirul" rubah "low"
     print(result)
 
 

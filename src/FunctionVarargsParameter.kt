@@ -4,18 +4,21 @@
 //Jika parameter tipe Array, kita wajib membuat array terlebih dahulu sebelum mengirimkan ke function
 //JIka parameter menggunakan varargs, kita bisa langsung mengirim data nya, jika lebih dari satu, cukup gunakan tanda koma
 
-fun hitungTotal(name : String, vararg values : Int) : Int{
+fun penjumlahan(name: String, vararg values: Int): Int{
     var total = 0
 
     for (value in values){
-        total  += value
+        total += value
     }
-
+    var result = println("$name Total belanjaan $total")
     return total
+
 }
 
-
 fun main() {
-        val result = hitungTotal("Eko", 10,10,10,10)
-    println(result)
+
+
+    var total = penjumlahan("Khoirul",10,10,10,10)
+
+
 }
